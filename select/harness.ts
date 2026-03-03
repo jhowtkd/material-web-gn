@@ -30,7 +30,7 @@ export class SelectHarness extends Harness<Select> {
 
   override async startHover() {
     const field = await this.getField();
-    const element = await new SelectFieldHardness(
+    const element = await new SelectFieldHarness(
       field,
     ).getInteractiveElement();
     this.simulateStartHover(element);
@@ -70,7 +70,7 @@ export class SelectHarness extends Harness<Select> {
 }
 
 // Private class (not exported)
-class SelectFieldHardness extends FieldHarness {
+class SelectFieldHarness extends FieldHarness {
   /* Expose so that we can call it from our internal code in SelectHarness. */
   override getInteractiveElement() {
     return super.getInteractiveElement();
