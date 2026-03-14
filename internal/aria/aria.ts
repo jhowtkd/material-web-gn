@@ -249,7 +249,6 @@ export type ARIARole =
   | 'form'
   | 'main'
   | 'navigation'
-  | 'region'
   | 'search'
   | 'doc-abstract'
   | 'doc-acknowledgments'
