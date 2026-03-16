@@ -7,7 +7,8 @@
 import {html, LitElement} from 'lit';
 
 /**
- * TODO(b/265336902): add docs
+ * A material icon component that renders an icon with aria-hidden="true" by
+ * default. Can be overridden by setting aria-hidden="false" for accessibility.
  */
 export class Icon extends LitElement {
   protected override render() {
