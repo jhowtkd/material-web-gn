@@ -28,13 +28,7 @@ export type FormSubmitterType = 'button' | 'submit' | 'reset';
  */
 export interface FormSubmitter extends ReactiveElement, WithElementInternals {
   /**
-   * A string indicating the form submission behavior of the element.
-   *
-   * - submit: The element submits the form. This is the default value if the
-   * attribute is not specified, or if it is dynamically changed to an empty or
-   * invalid value.
-   * - reset: The element resets the form.
-   * - button: The element does nothing.
+   * The form submission behavior. See {@link FormSubmitterType} for values.
    */
   type: FormSubmitterType;
 
