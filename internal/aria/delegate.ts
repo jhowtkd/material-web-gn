@@ -107,7 +107,7 @@ export function mixinDelegatesAria<T extends MixinBase<LitElement>>(
         this.dataset[dataProperty] = newValue;
       }
 
-      this.requestUpdate(ariaAttributeToDataProperty(name), oldValue);
+      this.requestUpdate(dataProperty, oldValue);
     }
 
     override getAttribute(name: string) {
