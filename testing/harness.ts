@@ -323,7 +323,7 @@ export class Harness<E extends HTMLElement = HTMLElement> {
   /**
    * Simulates submitting the element's associated form element.
    *
-   * @param form (Optional) form to submit, defaults to the elemnt's form.
+   * @param form (Optional) form to submit, defaults to the element's form.
    * @return The submitted form data or null if the element has no associated
    * form.
    */
