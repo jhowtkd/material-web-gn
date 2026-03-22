@@ -31,7 +31,7 @@ declare global {
  *
  * __Rationale:__ The FAB remains the default component for a screen’s primary
  * action. It comes in three sizes: small FAB, FAB, and large FAB. The extended
- * FAB’s wider format and text label give it more visual prominence than a  FAB.
+ * FAB’s wider format and text label give it more visual prominence than a FAB.
  * It’s often used on larger screens where a FAB would seem too small. Branded
  * FABs are used to specifically call attention to branded logo icons.
  *
