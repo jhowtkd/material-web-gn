@@ -105,17 +105,11 @@ export class NavigationTab
   }
 
   override focus() {
-    const buttonElement = this.buttonElement;
-    if (buttonElement) {
-      buttonElement.focus();
-    }
+    this.buttonElement?.focus();
   }
 
   override blur() {
-    const buttonElement = this.buttonElement;
-    if (buttonElement) {
-      buttonElement.blur();
-    }
+    this.buttonElement?.blur();
   }
 
   handleClick() {

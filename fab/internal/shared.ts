@@ -79,7 +79,7 @@ export abstract class SharedFab extends fabBaseClass {
   }
 
   private renderLabel() {
-    return this.label ? html`<span class="label">${this.label}</span>` : '';
+    return this.label ? html`<span class="label">${this.label}</span>` : nothing;
   }
 
   private renderIcon() {

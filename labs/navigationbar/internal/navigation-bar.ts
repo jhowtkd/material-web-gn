@@ -75,8 +75,12 @@ export class NavigationBar
     }
 
     if (changedProperties.has('tabs')) {
-      this.onHideInactiveLabelsChange(this.hideInactiveLabels);
-      this.onActiveIndexChange(this.activeIndex);
+      if (!changedProperties.has('hideInactiveLabels')) {
+        this.onHideInactiveLabelsChange(this.hideInactiveLabels);
+      }
+      if (!changedProperties.has('activeIndex')) {
+        this.onActiveIndexChange(this.activeIndex);
+      }
     }
   }
 
