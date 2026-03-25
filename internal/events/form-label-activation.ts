@@ -93,7 +93,6 @@ let isSquelchingEvents = false;
 async function squelchEventsForMicrotask() {
   isSquelchingEvents = true;
   // Need to pause for just one microtask.
-  // tslint:disable-next-line
   await null;
   isSquelchingEvents = false;
 }

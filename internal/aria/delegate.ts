@@ -168,7 +168,6 @@ function setupDelegatesAriaProperties(ctor: typeof ReactiveElement) {
     // Re-define the `ARIAMixin` properties to handle data attribute shifting.
     // It is safe to use `Object.defineProperty` here because the properties
     // are native and not renamed.
-    // tslint:disable-next-line:ban-unsafe-reflection
     Object.defineProperty(ctor.prototype, ariaProperty, {
       configurable: true,
       enumerable: true,
